@@ -1,7 +1,6 @@
 package br.com.JPA_NelioAlves.Application;
 
 import br.com.JPA_NelioAlves.Dominio.Pessoa;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -27,5 +26,7 @@ public class Programa {
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
+        em.close();
+        emf.close();
     }
 }
